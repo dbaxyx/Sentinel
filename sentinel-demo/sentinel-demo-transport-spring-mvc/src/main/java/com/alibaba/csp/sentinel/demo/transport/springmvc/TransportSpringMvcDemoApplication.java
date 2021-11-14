@@ -24,6 +24,7 @@ import com.alibaba.csp.sentinel.slots.block.flow.FlowRule;
 import com.alibaba.csp.sentinel.slots.block.flow.FlowRuleManager;
 import com.alibaba.csp.sentinel.transport.command.SentinelApiHandlerAdapter;
 import com.alibaba.csp.sentinel.transport.command.SentinelApiHandlerMapping;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -46,6 +47,7 @@ import java.util.List;
  */
 @SpringBootApplication
 @Controller
+@MapperScan(basePackages = "com.alibaba.sentinel.mapper")
 public class TransportSpringMvcDemoApplication {
 
     public static void main(String[] args) {

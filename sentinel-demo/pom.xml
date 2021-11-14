@@ -43,6 +43,7 @@
         <module>sentinel-demo-motan</module>
         <module>sentinel-demo-transport-spring-mvc</module>
         <module>sentinel-transport-spring-mvc-service</module>
+        <module>sentinel-transport-spring-mvc-service</module>
     </modules>
 
     <dependencies>
